@@ -1,3 +1,27 @@
+# filepath: /Users/jan/Work/LMU/teaching/DRA/2505 - HDRUK Project/nightingale/R/show_barplot.R
+
+#' Create a Bar Plot of Mortality Data
+#'
+#' This function creates a bar plot visualization of mortality data from the
+#' Crimean War, showing deaths per 1000 soldiers per year. The plot includes
+#' a vertical line marking when Nightingale's sanitary improvements were
+#' implemented in February/March 1855.
+#'
+#' @param mortality_data A data frame containing mortality data with columns
+#'   for date and various causes of death. Defaults to the `mortality` dataset.
+#' @param include_total Logical. Whether to include the total mortality column
+#'   in the visualization. Defaults to FALSE.
+#'
+#' @return A ggplot2 object representing the bar plot of mortality data.
+#'
+#' @examples
+#' # Basic bar plot without total column
+#' show_barplot()
+#'
+#' # Bar plot including total mortality
+#' show_barplot(include_total = TRUE)
+#'
+#' @export
 show_barplot <- function(mortality_data = mortality, include_total = FALSE) {
   if (!include_total) {
     mortality_data <- mortality_data |>
