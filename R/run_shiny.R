@@ -24,12 +24,9 @@
 #'
 #' @export
 run_shiny <- function() {
-  library(shiny)
-  library(ggplot2)
-  library(dplyr)
-  library(tidyr)
+  requireNamespace(shiny)
 
-  ui <- fluidPage(
+  ui <- shiny::fluidPage(
     titlePanel("Mortality Data Dashboard"),
     sidebarLayout(
       sidebarPanel(
