@@ -21,7 +21,7 @@
 #' show_barplot()
 #'
 #' # Bar plot including total mortality
-#' show_barplot(include_total = TRUE)
+#' show_barplot(selected_cols = c("disease", "other", "wounds", "total"))
 #'
 #' @export
 show_barplot <- function(
