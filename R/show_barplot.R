@@ -9,8 +9,10 @@
 #'
 #' @param mortality_data A data frame containing mortality data with columns
 #'   for date and various causes of death. Defaults to the `mortality` dataset.
-#' @param include_total Logical. Whether to include the total mortality column
-#'   in the visualization. Defaults to FALSE.
+#' @param selected_cols A character vector specifying the columns to include
+#'   in the visualization. Defaults to c("disease", "other", "wounds").
+#' @param show_vline Logical. Whether to include a vertical line marking
+#'   Nightingale's sanitary improvements. Defaults to TRUE.
 #'
 #' @return A ggplot2 object representing the bar plot of mortality data.
 #'

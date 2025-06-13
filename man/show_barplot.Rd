@@ -4,14 +4,21 @@
 \alias{show_barplot}
 \title{Create a Bar Plot of Mortality Data}
 \usage{
-show_barplot(mortality_data = mortality, include_total = FALSE)
+show_barplot(
+  mortality_data = mortality,
+  selected_cols = c("disease", "other", "wounds"),
+  show_vline = TRUE
+)
 }
 \arguments{
 \item{mortality_data}{A data frame containing mortality data with columns
 for date and various causes of death. Defaults to the `mortality` dataset.}
 
-\item{include_total}{Logical. Whether to include the total mortality column
-in the visualization. Defaults to FALSE.}
+\item{selected_cols}{A character vector specifying the columns to include
+in the visualization. Defaults to c("disease", "other", "wounds").}
+
+\item{show_vline}{Logical. Whether to include a vertical line marking
+Nightingale's sanitary improvements. Defaults to TRUE.}
 }
 \value{
 A ggplot2 object representing the bar plot of mortality data.
