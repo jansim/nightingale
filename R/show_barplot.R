@@ -31,12 +31,12 @@ show_barplot <- function(mortality_data = mortality, include_total = FALSE) {
   # Inspired by:
   # https://www.datawrapper.de/blog/recreating-nightingale-rose-chart
   mortality_data |>
-    tidyr::pivot_longer(-date) |>
+    tidyr::pivot_longer(-date, names_to = "cause_of_death", values_to = n_deaths) |>
     ggplot2::ggplot() +
     ggplot2::aes(
       x = date,
-      y = value,
-      fill = name
+      y = n_deaths,
+      fill = cause_of_death
     ) +
     ggplot2::geom_col(position = "dodge") +
     ggplot2::theme_classic() +
