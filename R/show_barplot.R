@@ -22,15 +22,15 @@
 #' show_barplot(include_total = TRUE)
 #'
 #' @export
-show_barplot <- function(mortality_data = mortality, include_total = FALSE) {
-  if (!include_total) {
-    mortality_data <- mortality_data |>
-      dplyr::select(-total)
-  }
-
+show_barplot <- function(
+    mortality_data = mortality,
+    selected_cols = c("disease", "other", "wounds"),
+    show_vline = TRUE) {
   # Inspired by:
   # https://www.datawrapper.de/blog/recreating-nightingale-rose-chart
-  mortality_data |>
+  plot <-
+    mortality_data |>
+    dplyr::select(date, all_of(selected_cols)) |>
     tidyr::pivot_longer(-date, names_to = "cause_of_death", values_to = "n_deaths") |>
     ggplot2::ggplot() +
     ggplot2::aes(
@@ -44,7 +44,12 @@ show_barplot <- function(mortality_data = mortality, include_total = FALSE) {
       x = "",
       y = "Deaths per 1000 soldiers per year"
     ) +
-    ggplot2::scale_x_datetime(date_labels = "%B %Y") +
-    # Nightingale's improvements were implemented in Feb / March 1855
-    ggplot2::geom_vline(xintercept = as.POSIXct("1855-02-15"), linetype = "dashed")
+    ggplot2::scale_x_datetime(date_labels = "%B %Y")
+
+  if (show_vline) {
+    plot <- plot +
+      # Nightingale's improvements were implemented in Feb / March 1855
+      ggplot2::geom_vline(xintercept = as.POSIXct("1855-02-15"), linetype = "dashed")
+  }
+  return(plot)
 }

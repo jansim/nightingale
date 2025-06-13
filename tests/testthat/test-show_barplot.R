@@ -16,13 +16,16 @@ test_that("show_barplot returns a ggplot object and excludes total by default", 
   expect_equal(nrow(plot_data), 9)
 })
 
-test_that("show_barplot includes total column when include_total = TRUE", {
-  plot <- show_barplot(test_mortality_data, include_total = TRUE)
-  plot_data <- ggplot2::ggplot_build(plot)$data[[1]]
+test_that(
+  "show_barplot includes total column when selected_cols = c('disease', 'wounds', 'other', 'total')",
+  {
+    plot <- show_barplot(test_mortality_data, selected_cols = c("disease", "wounds", "other", "total"))
+    plot_data <- ggplot2::ggplot_build(plot)$data[[1]]
 
-  # Should have 12 rows (3 dates × 4 categories, including total)
-  expect_equal(nrow(plot_data), 12)
-})
+    # Should have 12 rows (3 dates × 4 categories, including total)
+    expect_equal(nrow(plot_data), 12)
+  }
+)
 
 test_that("show_barplot visual appearance", {
   plot <- show_barplot(test_mortality_data)

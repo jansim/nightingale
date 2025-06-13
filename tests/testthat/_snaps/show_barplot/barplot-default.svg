@@ -21,22 +21,22 @@
 <rect x='0.00' y='0.00' width='720.00' height='576.00' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
 </g>
 <defs>
-  <clipPath id='cpMzcuNjl8NjM5LjUwfDIyLjc4fDU0NS4xMQ=='>
-    <rect x='37.69' y='22.78' width='601.82' height='522.33' />
+  <clipPath id='cpMzcuNjl8NjE0LjMwfDIyLjc4fDU0NS4xMQ=='>
+    <rect x='37.69' y='22.78' width='576.61' height='522.33' />
   </clipPath>
 </defs>
-<g clip-path='url(#cpMzcuNjl8NjM5LjUwfDIyLjc4fDU0NS4xMQ==)'>
-<rect x='37.69' y='22.78' width='601.82' height='522.33' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='65.04' y='204.81' width='55.95' height='316.56' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
-<rect x='176.95' y='363.09' width='55.95' height='158.28' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #619CFF;' />
-<rect x='121.00' y='426.40' width='55.95' height='94.97' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BA38;' />
-<rect x='251.56' y='46.53' width='55.95' height='474.84' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
-<rect x='363.46' y='283.95' width='55.95' height='237.42' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #619CFF;' />
-<rect x='307.51' y='378.92' width='55.95' height='142.45' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BA38;' />
-<rect x='444.29' y='268.12' width='55.95' height='253.25' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
-<rect x='556.20' y='394.75' width='55.95' height='126.63' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #619CFF;' />
-<rect x='500.24' y='442.23' width='55.95' height='79.14' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BA38;' />
-<line x1='2138.45' y1='545.11' x2='2138.45' y2='22.78' style='stroke-width: 1.07; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
+<g clip-path='url(#cpMzcuNjl8NjE0LjMwfDIyLjc4fDU0NS4xMQ==)'>
+<rect x='37.69' y='22.78' width='576.61' height='522.33' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='63.90' y='204.81' width='53.61' height='316.56' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
+<rect x='117.51' y='426.40' width='53.61' height='94.97' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BA38;' />
+<rect x='171.12' y='363.09' width='53.61' height='158.28' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #619CFF;' />
+<rect x='242.60' y='46.53' width='53.61' height='474.84' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
+<rect x='296.21' y='378.92' width='53.61' height='142.45' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BA38;' />
+<rect x='349.82' y='283.95' width='53.61' height='237.42' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #619CFF;' />
+<rect x='427.26' y='268.12' width='53.61' height='253.25' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
+<rect x='480.87' y='442.23' width='53.61' height='79.14' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BA38;' />
+<rect x='534.48' y='394.75' width='53.61' height='126.63' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #619CFF;' />
+<line x1='2050.47' y1='545.11' x2='2050.47' y2='22.78' style='stroke-width: 1.07; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
 </g>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
 <polyline points='37.69,545.11 37.69,22.78 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
@@ -48,25 +48,25 @@
 <polyline points='34.95,363.09 37.69,363.09 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='34.95,204.81 37.69,204.81 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
 <polyline points='34.95,46.53 37.69,46.53 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<polyline points='37.69,545.11 639.50,545.11 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
-<polyline points='148.97,547.85 148.97,545.11 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<polyline points='335.49,547.85 335.49,545.11 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<polyline points='528.22,547.85 528.22,545.11 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
-<text x='148.97' y='556.10' text-anchor='middle' style='font-size: 8.80px; fill: #4D4D4D; font-family: sans;' textLength='39.63px' lengthAdjust='spacingAndGlyphs'>April 1854</text>
-<text x='335.49' y='556.10' text-anchor='middle' style='font-size: 8.80px; fill: #4D4D4D; font-family: sans;' textLength='38.65px' lengthAdjust='spacingAndGlyphs'>May 1854</text>
-<text x='528.22' y='556.10' text-anchor='middle' style='font-size: 8.80px; fill: #4D4D4D; font-family: sans;' textLength='41.11px' lengthAdjust='spacingAndGlyphs'>June 1854</text>
+<polyline points='37.69,545.11 614.30,545.11 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<polyline points='144.31,547.85 144.31,545.11 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='323.02,547.85 323.02,545.11 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='507.67,547.85 507.67,545.11 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<text x='144.31' y='556.10' text-anchor='middle' style='font-size: 8.80px; fill: #4D4D4D; font-family: sans;' textLength='39.63px' lengthAdjust='spacingAndGlyphs'>April 1854</text>
+<text x='323.02' y='556.10' text-anchor='middle' style='font-size: 8.80px; fill: #4D4D4D; font-family: sans;' textLength='36.20px' lengthAdjust='spacingAndGlyphs'>Mai 1854</text>
+<text x='507.67' y='556.10' text-anchor='middle' style='font-size: 8.80px; fill: #4D4D4D; font-family: sans;' textLength='38.17px' lengthAdjust='spacingAndGlyphs'>Juni 1854</text>
 <text transform='translate(13.05,283.95) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: sans;' textLength='165.73px' lengthAdjust='spacingAndGlyphs'>Deaths per 1000 soldiers per year</text>
-<rect x='650.46' y='244.88' width='64.06' height='78.13' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<text x='655.94' y='259.07' style='font-size: 11.00px; font-family: sans;' textLength='27.52px' lengthAdjust='spacingAndGlyphs'>name</text>
-<rect x='655.94' y='265.69' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='656.65' y='266.40' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
-<rect x='655.94' y='282.97' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='656.65' y='283.68' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BA38;' />
-<rect x='655.94' y='300.25' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='656.65' y='300.96' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #619CFF;' />
-<text x='678.70' y='277.36' style='font-size: 8.80px; font-family: sans;' textLength='30.34px' lengthAdjust='spacingAndGlyphs'>disease</text>
-<text x='678.70' y='294.64' style='font-size: 8.80px; font-family: sans;' textLength='20.06px' lengthAdjust='spacingAndGlyphs'>other</text>
-<text x='678.70' y='311.92' style='font-size: 8.80px; font-family: sans;' textLength='30.34px' lengthAdjust='spacingAndGlyphs'>wounds</text>
+<rect x='625.26' y='244.88' width='89.26' height='78.13' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<text x='630.74' y='259.07' style='font-size: 11.00px; font-family: sans;' textLength='78.30px' lengthAdjust='spacingAndGlyphs'>cause_of_death</text>
+<rect x='630.74' y='265.69' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='631.45' y='266.40' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
+<rect x='630.74' y='282.97' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='631.45' y='283.68' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BA38;' />
+<rect x='630.74' y='300.25' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='631.45' y='300.96' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #619CFF;' />
+<text x='653.50' y='277.36' style='font-size: 8.80px; font-family: sans;' textLength='30.34px' lengthAdjust='spacingAndGlyphs'>disease</text>
+<text x='653.50' y='294.64' style='font-size: 8.80px; font-family: sans;' textLength='20.06px' lengthAdjust='spacingAndGlyphs'>other</text>
+<text x='653.50' y='311.92' style='font-size: 8.80px; font-family: sans;' textLength='30.34px' lengthAdjust='spacingAndGlyphs'>wounds</text>
 <text x='37.69' y='14.56' style='font-size: 13.20px; font-family: sans;' textLength='87.33px' lengthAdjust='spacingAndGlyphs'>barplot_default</text>
 </g>
 </svg>
