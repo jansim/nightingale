@@ -24,9 +24,9 @@
 #'
 #' @export
 run_shiny <- function() {
-  requireNamespace(shiny)
+  require("shiny")
 
-  ui <- shiny::fluidPage(
+  ui <- fluidPage(
     titlePanel("Mortality Data Dashboard"),
     sidebarLayout(
       sidebarPanel(
