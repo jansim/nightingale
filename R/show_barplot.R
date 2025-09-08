@@ -46,7 +46,9 @@ show_barplot <- function(
       x = "",
       y = "Deaths per 1000 soldiers per year"
     ) +
-    ggplot2::scale_x_datetime(date_labels = "%B %Y")
+    ggplot2::scale_x_datetime(
+      date_breaks = "1 month",
+      labels = scales::label_date(format = "%B %Y", locale = "en"))
 
   if (show_vline) {
     plot <- plot +
