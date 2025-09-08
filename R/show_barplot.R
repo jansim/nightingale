@@ -48,7 +48,7 @@ show_barplot <- function(
     ) +
     ggplot2::scale_x_datetime(
       date_breaks = "1 month",
-      labels = scales::label_date(format = "%B %Y", locale = "en"))
+      labels = scales::label_date(format = "%B %Y", locale = "C"))
 
   if (show_vline) {
     plot <- plot +
