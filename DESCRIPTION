@@ -1,7 +1,7 @@
 Package: nightingale
 Type: Package
 Title: What the Package Does (Title Case)
-Version: 0.2.1
+Version: 0.2.2
 Author: Who wrote it
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
@@ -13,7 +13,8 @@ Depends:
     R (>= 3.5)
 Suggests: 
     testthat (>= 3.0.0),
-    vdiffr
+    vdiffr,
+    withr
 Config/testthat/edition: 3
 RoxygenNote: 7.3.2
 Imports: 
