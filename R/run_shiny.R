@@ -24,13 +24,11 @@
 #'
 #' @export
 run_shiny <- function() {
-  require("shiny")
-
-  ui <- fluidPage(
-    titlePanel("Mortality Data Dashboard"),
-    sidebarLayout(
-      sidebarPanel(
-        selectInput(
+  ui <- shiny::fluidPage(
+    shiny::titlePanel("Mortality Data Dashboard"),
+    shiny::sidebarLayout(
+      shiny::sidebarPanel(
+        shiny::selectInput(
           "selected_causes",
           "Select Causes of Death:",
           choices = colnames(mortality)[-1], # Exclude the 'date' column
@@ -39,20 +37,20 @@ run_shiny <- function() {
           selectize = FALSE,
           multiple = TRUE
         ),
-        checkboxInput(
+        shiny::checkboxInput(
           "show_vline",
           "Show date of Nightingale's Improvements",
           value = TRUE
         )
       ),
-      mainPanel(
-        plotOutput("barplot")
+      shiny::mainPanel(
+        shiny::plotOutput("barplot")
       )
     )
   )
 
   server <- function(input, output, session) {
-    output$barplot <- renderPlot({
+    output$barplot <- shiny::renderPlot({
       show_barplot(
         mortality_data = mortality,
         selected_cols = input$selected_causes,
@@ -61,5 +59,5 @@ run_shiny <- function() {
     })
   }
 
-  shinyApp(ui, server)
+  shiny::shinyApp(ui, server)
 }
