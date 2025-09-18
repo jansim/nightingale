@@ -35,7 +35,7 @@ show_barplot <- function(
   stopifnot(all(metrics %in% colnames(mortality_data)))
 
   plot <- mortality_data |>
-    dplyr::select(date, all_of(metrics)) |>
+    dplyr::select(date, tidyselect::all_of(metrics)) |>
     tidyr::pivot_longer(-date, names_to = "cause_of_death", values_to = "n_deaths") |>
     ggplot2::ggplot() +
     ggplot2::aes(

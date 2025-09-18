@@ -16,3 +16,5 @@
 #' The raw data is from "Notes on Matters Affecting the Health, Efficiency, and Hospital Administration of the British Army" by Florence Nightingale, 1858. https://wellcomecollection.org/works/jxwtskzc/items?canvas=9
 #' Extracted by Livnah from Datawrapper. https://www.datawrapper.de/blog/recreating-nightingale-rose-chart
 "mortality"
+
+globalVariables(c("mortality", "date", "cause_of_death", "n_deaths"))

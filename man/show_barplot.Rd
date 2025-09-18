@@ -6,19 +6,19 @@
 \usage{
 show_barplot(
   mortality_data = mortality,
-  selected_cols = c("disease", "other", "wounds"),
-  show_vline = TRUE
+  metrics = c("disease", "other", "wounds"),
+  highlight_intervention = TRUE
 )
 }
 \arguments{
 \item{mortality_data}{A data frame containing mortality data with columns
 for date and various causes of death. Defaults to the `mortality` dataset.}
 
-\item{selected_cols}{A character vector specifying the columns to include
+\item{metrics}{A character vector specifying the metrics to include
 in the visualization. Defaults to c("disease", "other", "wounds").}
 
-\item{show_vline}{Logical. Whether to include a vertical line marking
-Nightingale's sanitary improvements. Defaults to TRUE.}
+\item{highlight_intervention}{Logical. Whether to include a vertical line
+marking Nightingale's sanitary improvements. Defaults to TRUE.}
 }
 \value{
 A ggplot2 object representing the bar plot of mortality data.
@@ -34,6 +34,6 @@ implemented in February/March 1855.
 show_barplot()
 
 # Bar plot including total mortality
-show_barplot(selected_cols = c("disease", "other", "wounds", "total"))
+show_barplot(metrics = c("disease", "other", "wounds", "total"))
 
 }

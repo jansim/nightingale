@@ -4,7 +4,11 @@
 \alias{run_shiny}
 \title{Launch Shiny Dashboard for Mortality Data}
 \usage{
-run_shiny()
+run_shiny(mortality_data = mortality)
+}
+\arguments{
+\item{mortality_data}{A data frame containing mortality data with columns
+for date and various causes of death. Defaults to the `mortality` dataset.}
 }
 \description{
 This function launches a Shiny dashboard that displays the bar plot of

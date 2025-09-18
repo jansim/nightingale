@@ -14,6 +14,9 @@
 #' The bar plot is generated using the `show_barplot()` function, and the
 #' data is dynamically filtered based on user input.
 #'
+#' @param mortality_data A data frame containing mortality data with columns
+#'   for date and various causes of death. Defaults to the `mortality` dataset.
+#'
 #' @seealso
 #' \code{\link{show_barplot}} for the function that generates the bar plot.
 #'
@@ -23,7 +26,7 @@
 #' }
 #'
 #' @export
-run_shiny <- function() {
+run_shiny <- function(mortality_data = mortality) {
   ui <- shiny::fluidPage(
     shiny::titlePanel("Mortality Data Dashboard"),
     shiny::sidebarLayout(
@@ -53,8 +56,8 @@ run_shiny <- function() {
     output$barplot <- shiny::renderPlot({
       show_barplot(
         mortality_data = mortality,
-        selected_cols = input$selected_causes,
-        show_vline = input$show_vline
+        metrics = input$selected_causes,
+        highlight_intervention = input$show_vline
       )
     })
   }
