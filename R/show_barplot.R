@@ -9,10 +9,10 @@
 #'
 #' @param mortality_data A data frame containing mortality data with columns
 #'   for date and various causes of death. Defaults to the `mortality` dataset.
-#' @param selected_cols A character vector specifying the columns to include
+#' @param metrics A character vector specifying the metrics to include
 #'   in the visualization. Defaults to c("disease", "other", "wounds").
-#' @param show_vline Logical. Whether to include a vertical line marking
-#'   Nightingale's sanitary improvements. Defaults to TRUE.
+#' @param highlight_intervention Logical. Whether to include a vertical line
+#'   marking Nightingale's sanitary improvements. Defaults to TRUE.
 #'
 #' @return A ggplot2 object representing the bar plot of mortality data.
 #'
@@ -21,17 +21,21 @@
 #' show_barplot()
 #'
 #' # Bar plot including total mortality
-#' show_barplot(selected_cols = c("disease", "other", "wounds", "total"))
+#' show_barplot(metrics = c("disease", "other", "wounds", "total"))
 #'
 #' @export
 show_barplot <- function(
     mortality_data = mortality,
-    selected_cols = c("disease", "other", "wounds"),
-    show_vline = TRUE) {
+    metrics = c("disease", "other", "wounds"),
+    highlight_intervention = TRUE) {
   # Inspired by:
   # https://www.datawrapper.de/blog/recreating-nightingale-rose-chart
+
+  # Validate chosen metrics
+  stopifnot(all(metrics %in% colnames(mortality_data)))
+
   plot <- mortality_data |>
-    dplyr::select(date, all_of(selected_cols)) |>
+    dplyr::select(date, all_of(metrics)) |>
     tidyr::pivot_longer(-date, names_to = "cause_of_death", values_to = "n_deaths") |>
     ggplot2::ggplot() +
     ggplot2::aes(
@@ -51,7 +55,7 @@ show_barplot <- function(
       labels = scales::label_date(format="%m/%Y", locale = NULL)
     )
 
-  if (show_vline) {
+  if (highlight_intervention) {
     plot <- plot +
       # Nightingale's improvements were implemented in Feb / March 1855
       ggplot2::geom_vline(xintercept = as.POSIXct("1855-02-15"), linetype = "dashed")

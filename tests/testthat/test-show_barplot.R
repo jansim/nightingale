@@ -17,15 +17,21 @@ test_that("show_barplot returns a ggplot object and excludes total by default", 
 })
 
 test_that(
-  "show_barplot includes total column when selected_cols = c('disease', 'wounds', 'other', 'total')",
+  "show_barplot includes total column when metrics = c('disease', 'wounds', 'other', 'total')",
   {
-    plot <- show_barplot(test_mortality_data, selected_cols = c("disease", "wounds", "other", "total"))
+    plot <- show_barplot(test_mortality_data, metrics = c("disease", "wounds", "other", "total"))
     plot_data <- ggplot2::ggplot_build(plot)$data[[1]]
 
     # Should have 12 rows (3 dates × 4 categories, including total)
     expect_equal(nrow(plot_data), 12)
   }
 )
+
+test_that("show_barplot should validate metrics", {
+  expect_error(
+    show_barplot(test_mortality_data, metrics = c("disease", "invalid_metric"))
+  )
+})
 
 test_that("show_barplot visual appearance", {
   plot <- show_barplot(test_mortality_data)
