@@ -1,11 +1,22 @@
 Package: nightingale
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.2.4
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Title: Visualize Data from Florence Nightingale's Mortality Analysis
+Version: 0.3.0
+Authors@R: c(
+        person(
+            "Jan", "Simson", ,
+            "jan.simson@lmu.de",
+            role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-9406-7761")
+        ),
+        person(
+            "Fritjof", "Jammers", ,
+            "fritjoflammers@gmail.com",
+            role = c("aut")
+        )
+    )
+Description: An exemplary R package for learning and trying out practices of
+    research software engineering.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
