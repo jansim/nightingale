@@ -30,8 +30,7 @@ show_barplot <- function(
     show_vline = TRUE) {
   # Inspired by:
   # https://www.datawrapper.de/blog/recreating-nightingale-rose-chart
-  plot <-
-    mortality_data |>
+  plot <- mortality_data |>
     dplyr::select(date, all_of(selected_cols)) |>
     tidyr::pivot_longer(-date, names_to = "cause_of_death", values_to = "n_deaths") |>
     ggplot2::ggplot() +
@@ -44,11 +43,13 @@ show_barplot <- function(
     ggplot2::theme_classic() +
     ggplot2::labs(
       x = "",
-      y = "Deaths per 1000 soldiers per year"
+      y = "Deaths per 1000 soldiers per year",
+      fill = "Cause of Death"
     ) +
-    ggplot2::scale_x_datetime(
-      date_breaks = "1 month",
-      labels = scales::label_date(format = "%B %Y", locale = "C"))
+    ggplot2::scale_x_date(
+      date_breaks = "4 months",
+      labels = scales::label_date(format="%m/%Y", locale = NULL)
+    )
 
   if (show_vline) {
     plot <- plot +
