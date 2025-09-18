@@ -22,11 +22,11 @@
 #'
 #' @examples
 #' if (interactive()) {
-#'   run_shiny()
+#'   show_shiny_app()
 #' }
 #'
 #' @export
-run_shiny <- function(mortality_data = mortality) {
+show_shiny_app <- function(mortality_data = mortality) {
   ui <- shiny::fluidPage(
     shiny::titlePanel("Mortality Data Dashboard"),
     shiny::sidebarLayout(
