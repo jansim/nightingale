@@ -4,6 +4,16 @@ LABEL org.opencontainers.image.source=https://github.com/jansim/nightingale
 LABEL org.opencontainers.image.description="A docker image to run the Nightingale Shiny app"
 LABEL org.opencontainers.image.licenses=MIT
 
+# Install system dependencies for graphics packages
+RUN apt-get update && apt-get install -y \
+    libwebp-dev \
+    libwebpmux3 \
+    libwebpdemux2 \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 # Install dependencies
 RUN install2.r --error devtools
 
