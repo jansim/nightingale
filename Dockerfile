@@ -17,6 +17,6 @@ RUN R -e "devtools::install('/home/nightingale', dependencies = TRUE)"
 EXPOSE 3838
 
 # Create startup script
-RUN echo 'nightingale::show_shiny_app()' > /srv/shiny-server/app.R
+RUN echo 'library(nightingale)\nshow_shiny_app()' > /srv/shiny-server/app.R
 
 # CMD is already set by the rocker/shiny image to run shiny-server
