@@ -52,7 +52,7 @@ show_barplot <- function(
     ) +
     ggplot2::scale_x_date(
       date_breaks = "4 months",
-      labels = scales::label_date(format="%m/%Y", locale = NULL)
+      labels = scales::label_date(format = "%m/%Y", locale = NULL)
     )
 
   if (highlight_intervention) {

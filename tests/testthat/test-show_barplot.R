@@ -40,7 +40,7 @@ test_that("show_barplot visual appearance", {
       ggplot2::scale_x_date(
         date_breaks = ggplot2::waiver(),
         breaks = as.Date(c("1854-04-01", "1854-05-01", "1854-06-01")),
-        labels = scales::label_date(format="%m/%Y", locale = NULL)
+        labels = scales::label_date(format = "%m/%Y", locale = NULL)
       )
   })
   vdiffr::expect_doppelganger("barplot_default", plot)
