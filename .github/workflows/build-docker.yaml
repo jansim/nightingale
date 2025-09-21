@@ -40,8 +40,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/world-wide-lab/server
-            public.ecr.aws/g0k5o2x2/server
+            ghcr.io/jansim/nightingale
           tags: |
             # set latest tag for default branch
             type=raw,value=latest,enable={{is_default_branch}}
