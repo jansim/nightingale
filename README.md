@@ -7,14 +7,6 @@
 
 The goal of `nightingale` is to serve as a practical example to help you learn and try out practices of research software engineering.
 
-## Installation
-
-You can install the development version of nightingale from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("pak")
-pak::pak("jansim/nightingale")
-```
 
 ## Example
 
