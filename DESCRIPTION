@@ -17,7 +17,7 @@ Authors@R: c(
     )
 Description: An exemplary R package for learning and trying out practices of
     research software engineering.
-License: MIT + file LICENSE
+License: 
 Encoding: UTF-8
 LazyData: true
 Depends:
