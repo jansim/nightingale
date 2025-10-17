@@ -1,6 +1,6 @@
 Package: nightingale
 Type: Package
-Title: Visualize Data from Florence Nightingale's Mortality Analysis
+Title: ???
 Version: 0.3.0
 Authors@R: c(
         person(
@@ -15,8 +15,7 @@ Authors@R: c(
             role = c("aut")
         )
     )
-Description: An exemplary R package for learning and trying out practices of
-    research software engineering.
+Description: 
 License: 
 Encoding: UTF-8
 LazyData: true
