@@ -31,6 +31,19 @@ show_barplot()
 show_shiny_app()
 ```
 
+## Docker
+
+You can run the shiny app included in the package through a docker container via the following command:
+
+```bash
+docker run --rm -p 3838:3838 ghcr.io/jansim/nightingale:latest
+```
+
+This will start the shiny app and make it available at [https://localhost:3838/](https://localhost:3838/).
+
+> [!TIP]
+> The `--rm` flag means that the container will be removed immediately after you stop it (you might still want to delete the container *image*, though) and `-p` (short for `--expose`) means that port 3838 from the container will be exposed and reachable from the outside.
+
 ## Acknowledgement
 
 The package uses data and draws inspiration from https://www.datawrapper.de/blog/recreating-nightingale-rose-chart.
