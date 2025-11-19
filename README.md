@@ -44,6 +44,16 @@ This will start the shiny app and make it available at [https://localhost:3838/]
 > [!TIP]
 > The `--rm` flag means that the container will be removed immediately after you stop it (you might still want to delete the container *image*, though) and `-p` (short for `--expose`) means that port 3838 from the container will be exposed and reachable from the outside.
 
+## Branches
+
+The repository contains different branches with varying degrees of progress / missing files to enable incremental usage of the repository in teaching. This applies to all branches prefixed with `sessions/`, which are not intended to ever be merged into the `main` branch. The following branches exist:
+
+- `sessions/2-readme`: Adding a README to a repository.
+- `sessions/3-license-and-installation`: Choosing a license for a repository and adding installation instructions.
+- `sessions/4-tests-and-style`: Automated testing and code style, including use of linters.
+- `sessions/4.1-snapshots`: Snapshot tests.
+- `sessions/5-ci-cd`: Automation, CI/CD and Github Actions.
+
 ## Acknowledgement
 
 The package uses data and draws inspiration from https://www.datawrapper.de/blog/recreating-nightingale-rose-chart.
