@@ -48,11 +48,12 @@ This will start the shiny app and make it available at [https://localhost:3838/]
 
 The repository contains different branches with varying degrees of progress / missing files to enable incremental usage of the repository in teaching. This applies to all branches prefixed with `sessions/`, which are not intended to ever be merged into the `main` branch. The following branches exist:
 
-- `sessions/2-readme`: Adding a README to a repository.
-- `sessions/3-license-and-installation`: Choosing a license for a repository and adding installation instructions.
-- `sessions/4-tests-and-style`: Automated testing and code style, including use of linters.
-- `sessions/4.1-snapshots`: Snapshot tests.
-- `sessions/5-ci-cd`: Automation, CI/CD and Github Actions.
+- [`sessions/2-readme`](https://github.com/jansim/nightingale/tree/sessions/2-readme): Adding a README to a repository.
+- [`sessions/3-license-and-installation`](https://github.com/jansim/nightingale/tree/sessions/3-license-and-installation): Choosing a license for a repository and adding installation instructions.
+- [`sessions/4-tests-and-style`](https://github.com/jansim/nightingale/tree/sessions/4-tests-and-style): Automated testing and code style, including use of linters.
+- [`sessions/4.1-snapshots`](https://github.com/jansim/nightingale/tree/sessions/4.1-snapshots): Snapshot tests.
+- [`sessions/5-ci-cd`](https://github.com/jansim/nightingale/tree/sessions/5-ci-cd): Automation, CI/CD and Github Actions.
+- [`sessions/6-containers`](https://github.com/jansim/nightingale/tree/sessions/6-containers): Containerization and Docker.
 
 ## Acknowledgement
 
