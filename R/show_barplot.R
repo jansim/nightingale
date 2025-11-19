@@ -1,5 +1,3 @@
-# filepath: /Users/jan/Work/LMU/teaching/DRA/2505 - HDRUK Project/nightingale/R/show_barplot.R
-
 #' Create a Bar Plot of Mortality Data
 #'
 #' This function creates a bar plot visualization of mortality data from the
