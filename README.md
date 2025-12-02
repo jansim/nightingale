@@ -31,6 +31,7 @@ show_barplot()
 show_shiny_app()
 ```
 
+
 ## Acknowledgement
 
 The package uses data and draws inspiration from https://www.datawrapper.de/blog/recreating-nightingale-rose-chart.
