@@ -10,3 +10,8 @@ library(testthat)
 library(nightingale)
 
 test_check("nightingale")
+
+## CICD
+
+#This is a test to see if the CICD pipeline is working.
+1+1
